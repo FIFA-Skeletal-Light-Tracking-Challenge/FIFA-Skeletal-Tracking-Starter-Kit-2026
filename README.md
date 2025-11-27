@@ -1,4 +1,9 @@
 # FIFA Skeletal Tracking Starter Kit (2026)
+[📊Benchmark Validation Set](https://www.codabench.org/competitions/11681/) | 
+[📊Benchmark Challenge Set](https://www.codabench.org/competitions/11682/) |
+[💻Data](https://huggingface.co/datasets/tijiang13/skeletal-tracking-light-2026) |
+[🏠Homepage](https://inside.fifa.com/innovation/innovation-programme/skeletal-tracking) |
+[💬Discord (SoccerNet)](https://discord.com/invite/cPbqf2mAwF)
 
 This repository provides a **naïve baseline** for the **FIFA Skeletal Tracking Challenge**. It includes a simple, fully documented implementation to help participants get started with 3D pose estimation using bounding boxes, skeletal data, and camera parameters.
 
@@ -56,12 +61,12 @@ data/
 - **`skel_2d/`**: Contains estimated 2D skeletal keypoints (15 keypoints). 
 - **`skel_3d/`**: Contains estimated 3D skeletal keypoints (15 keypoints). 
 
-You can find details about the `cameras`, `bounding boxes`, and `images` in docs/data-format.md. For `skel_2d` and `skel_3d`, you can generate them automatically using the provided `preprocess.py` script. Alternatively, we have also uploaded preprocessed data [here](https://huggingface.co/datasets/tijiang13/skeletal-tracking-light-2026).
+You can find details about the `cameras`, `bounding boxes`, and `images` [here](doc/data.md). For `skel_2d` and `skel_3d`, you can generate them automatically using the provided `preprocess.py` script. Alternatively, we have also uploaded preprocessed data [here](https://huggingface.co/datasets/tijiang13/skeletal-tracking-light-2026).
 
 ### 📺 Sample Visualization
-We have integrated basic visualization functions in the code, but you are also encourage to checkout the visualization script we provided in [WorldPose Dataset](https://github.com/eth-ait/WorldPoseDataset/tree/visualization)
+We have integrated basic visualization functions in the code, but you can also check out the visualization script we provided in [WorldPose Dataset](https://github.com/eth-ait/WorldPoseDataset/tree/visualization)
 
-We provide sample visualization of prediction of this baseline implementation in [media folder](media/), it showcases the predicted cameras as well as 3D skels (we rendered the meshes instead 3D skels in the samples).
+We provide sample visualization of prediction of this baseline implementation in [media folder](media/). These showcase the predicted camera poses as well as 3D skeletons (we rendered the meshes instead of 3D skeletons in the samples).
 
 ## 🔧 Running the Baseline
 To run the baseline model on the dataset, simply execute:

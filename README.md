@@ -68,6 +68,10 @@ We have integrated basic visualization functions in the code, but you are also e
 
 We provide sample visualization of prediction of this baseline implementation in [media folder](media/), it showcases the predicted cameras as well as 3D skels (we rendered the meshes instead 3D skels in the samples).
 
+| ARG_CRO_225412 | MOR_POR_193202 | NET_ARG_004041 |
+|----------------|----------------|----------------|
+| ![sample1](media/gif/ARG_CRO_225412.gif) | ![sample2](media/gif/MOR_POR_193202.gif) | ![sample3](media/gif/NET_ARG_004041.gif) |
+
 ## 🔧 Running the Baseline
 To run the baseline model on the dataset, simply execute:
 
